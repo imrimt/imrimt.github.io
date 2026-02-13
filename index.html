@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Son Ngo - Full-stack engineer exploring the edge of what's possible with AI and software.">
+  <meta property="og:title" content="Son Ngo - Software Engineer">
+  <meta property="og:description" content="Full-stack engineer exploring the edge of what's possible with AI and software.">
+  <meta property="og:type" content="website">
+  <title>Son Ngo - Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">SN</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <h1 class="hero__name">Son Ngo</h1>
+      <h2 class="hero__title">Software Engineer</h2>
+      <p class="hero__tagline">Full-stack engineer who loves building at the frontier of emerging tech &mdash; prototyping fast, learning from users, and shipping what works.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="assets/resume.pdf" class="btn btn--outline" target="_blank" rel="noopener">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section__title fade-in">About Me</h2>
+      <div class="about__grid fade-in">
+        <div class="about__text">
+          <p>
+            I'm Son, a full-stack engineer based in the Boston area with 8+ years of experience
+            shipping software end-to-end. I studied Computer Science and Mathematics at Bowdoin
+            College, then jumped straight into startup life and never looked back.
+          </p>
+          <p>
+            Most of my career has been at Tamr, where I've grown from an early engineer to a
+            senior IC leading cross-team initiatives. I'm especially drawn to the messy early
+            stages of a project &mdash; talking to users, prototyping quickly, and figuring out
+            what actually deserves to be built.
+          </p>
+          <p>
+            Lately I've been deep in AI-assisted development workflows, building custom tooling
+            and integrations that help engineering teams move faster. I'm excited about the future
+            of human-AI collaboration and looking for my next opportunity to build at that intersection.
+          </p>
+        </div>
+        <div class="about__image">
+          <!-- PLACEHOLDER: Replace with your photo -->
+          <div class="about__photo-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Your Photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--alt skills" id="skills">
+    <div class="container">
+      <h2 class="section__title fade-in">Skills</h2>
+      <div class="skills__grid fade-in">
+        <div class="skills__category">
+          <h3 class="skills__category-title">Languages</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Ruby</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h3 class="skills__category-title">Frameworks</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Ruby on Rails</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Spring Boot</span>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h3 class="skills__category-title">Cloud & Infrastructure</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Cloud Run</span>
+            <span class="skill-tag">Pub/Sub</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h3 class="skills__category-title">AI & Tooling</h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">LLM Workflows</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">TDD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section__title fade-in">Experience</h2>
+      <div class="timeline">
+        <div class="timeline__item fade-in">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Senior Software Engineer II (IC4)</h3>
+            <p class="timeline__company">Tamr, Inc.</p>
+            <p class="timeline__date">Jan 2018 &ndash; Present</p>
+            <ul class="timeline__bullets">
+              <li>Championed AI-assisted engineering practices across the team, creating shared tooling and standards adopted by ~20 engineers</li>
+              <li>Took a webhooks product from idea to production &mdash; ran discovery with customers, prototyped the solution, then built it on GCP serverless infrastructure</li>
+              <li>Modernized batch job infrastructure by migrating to Kubernetes, simplifying operations and reducing cloud spend</li>
+              <li>Led a large-scale configuration migration initiative involving user research, schema design, and coordinated refactoring across 50k+ lines of code</li>
+              <li>Delivered full-stack React/TypeScript features including data visualization and real-time collaboration interfaces</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline__item fade-in">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Full-Stack Web Developer</h3>
+            <p class="timeline__company">Considdr Inc.</p>
+            <p class="timeline__date">Jun 2017 &ndash; Dec 2017</p>
+            <ul class="timeline__bullets">
+              <li>Shipped features rapidly at a seed-stage startup using Ruby on Rails and React, iterating based on early user feedback</li>
+              <li>Owned full vertical slices from database through UI and set up CI/CD pipelines for daily deployments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="experience__resume fade-in">
+        <a href="assets/resume.pdf" class="btn btn--outline" target="_blank" rel="noopener">Download Full Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section--alt projects" id="projects">
+    <div class="container">
+      <h2 class="section__title fade-in">Projects</h2>
+      <div class="projects__grid">
+        <div class="project-card fade-in">
+          <h3 class="project-card__title">Claude Code Skills & MCP Ecosystem</h3>
+          <p class="project-card__desc">An open-source collection of reusable AI engineering skills for test-driven development, systematic debugging, and code review. Includes MCP server integrations for Jira with natural language queries from the terminal.</p>
+          <div class="project-card__tags">
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/imrimt" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <h3 class="project-card__title">Event Venue Marketplace</h3>
+          <p class="project-card__desc">A dual-sided platform connecting event planners with venues. Features searchable internal metrics like capacity and minimums that aren't available on public listings. MVP built and validated in 3 weeks.</p>
+          <div class="project-card__tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Gemini CLI</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/imrimt" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <h3 class="project-card__title">SymmetryWorks</h3>
+          <p class="project-card__desc">Mathematical art generation tool from a Bowdoin College summer research fellowship. Creates wallpaper patterns using symmetry groups and complex analysis. 12 stars on GitHub.</p>
+          <div class="project-card__tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Math</span>
+            <span class="skill-tag">Research</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/imrimt/symmetryworks-research-bowdoin" target="_blank" rel="noopener" aria-label="GitHub repository for SymmetryWorks">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title fade-in">Get in Touch</h2>
+      <p class="contact__text fade-in">I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out.</p>
+      <div class="contact__links fade-in">
+        <a href="mailto:sonngo.ps@gmail.com" class="contact__icon" aria-label="Send email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/sonngo95" class="contact__icon" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/imrimt" class="contact__icon" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copyright">&copy; <span id="year"></span> Son Ngo. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="mailto:sonngo.ps@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/sonngo95" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/imrimt" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
