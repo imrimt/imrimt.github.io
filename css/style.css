@@ -574,6 +574,12 @@ a:hover {
   box-shadow: var(--card-shadow-hover);
 }
 
+.project-card__image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
 .project-card__title {
   font-size: 1.15rem;
   font-weight: 700;
