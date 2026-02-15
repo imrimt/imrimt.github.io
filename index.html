@@ -29,6 +29,7 @@
         <a href="#skills" class="nav__link">Skills</a>
         <a href="#experience" class="nav__link">Experience</a>
         <a href="#projects" class="nav__link">Projects</a>
+        <a href="architecture.html" class="nav__link">Architecture</a>
         <a href="#education" class="nav__link">Education</a>
         <a href="#contact" class="nav__link">Contact</a>
         <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -108,9 +109,10 @@
             <span class="skill-tag">Java</span>
             <span class="skill-tag">Kotlin</span>
             <span class="skill-tag">Python</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Ruby</span>
             <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Elm</span>
+            <span class="skill-tag">Ruby</span>
             <span class="skill-tag">SQL</span>
           </div>
         </div>
@@ -129,8 +131,8 @@
             <span class="skill-tag">GCP</span>
             <span class="skill-tag">Cloud Run</span>
             <span class="skill-tag">Pub/Sub</span>
+            <span class="skill-tag">BigQuery</span>
             <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">CI/CD</span>
           </div>
         </div>
         <div class="skills__category">
@@ -139,10 +141,7 @@
             <span class="skill-tag">Claude Code</span>
             <span class="skill-tag">MCP</span>
             <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">LLM Workflows</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Jenkins</span>
-            <span class="skill-tag">TDD</span>
+            <span class="skill-tag">Multi-agent Workflows</span>
           </div>
         </div>
       </div>
@@ -161,24 +160,23 @@
             <p class="timeline__company">Tamr, Inc.</p>
             <p class="timeline__date">Jan 2018 &ndash; Present</p>
             <ul class="timeline__bullets">
-              <li>Founding engineer and lead contributor to Tamr's data pipeline orchestration engine, then built a full data integration platform on top of it with a Java/gRPC backend, Spark connectors for Snowflake, BigQuery, S3, and Azure, and a React/TypeScript UI for configuring sources and destinations. This brought Tamr to competitive parity on multi-cloud data connectivity</li>
-              <li>Took a webhooks product from idea to production by running discovery with customers, prototyping the solution, and building an asynchronous event processing framework on Google Pub/Sub and Cloud Run Functions. The framework was later adopted org-wide for platform notifications and other event-driven features</li>
-              <li>Modernized batch job infrastructure by migrating to Kubernetes, simplifying operations and reducing cloud spend by 50%</li>
-              <li>Led a large-scale data pipeline configuration upgrade involving user research, schema design, and coordinated refactoring across 50k+ lines of code, significantly boosting prospective customer engagement and reducing average custom implementation time by 30%</li>
-              <li>Championed AI-assisted engineering practices across the team, creating shared tooling and standards adopted by ~20 engineers. Notable examples include a Jira agent for seamless task management, an automated docs maintenance skill, and a Gemini-powered review skill for adversarial and multimodal code reviews, with 80% adoption across the team</li>
-              <li>Integrated Tamr with public tile servers like OpenStreetMap to power the UI for geospatial data mastering, enabling its patented high-scale location-based deduplication features</li>
+              <li>Designed and built a plugin-based data pipeline orchestration engine with a Java/gRPC backend, Spark connectors for Snowflake, BigQuery, S3, and Azure, and a React/TypeScript UI &mdash; brought the product to competitive parity on multi-cloud data connectivity</li>
+              <li>Took a webhooks product from idea to production by building the company's first event processing framework on Google Pub/Sub and Cloud Run Functions, with per-instance caching and BigQuery audit trails &mdash; now adopted org-wide for asynchronous processing</li>
+              <li>Led a core-product configuration upgrade involving architectural designs, UX research, and cross-team coordination to ensure full backward compatibility for existing customers and seamless data migration</li>
+              <li>Modernized the batch job compute engine by migrating to Kubernetes Jobs, enabling streaming operations with terminal hooks, unlocking incremental processing with resumability and async concurrency, reducing cloud spend by 50%</li>
+              <li>Championed AI-assisted engineering across ~20 engineers with 80% adoption, building a centralized skills marketplace including a Jira agent, automated docs maintenance, and a Gemini-powered adversarial code review skill tailored to the internal knowledge base</li>
+              <li>Mentored junior and mid-level engineers on system design, code quality, and testing practices; contributed shared test frameworks and common libraries adopted across teams</li>
             </ul>
           </div>
         </div>
         <div class="timeline__item fade-in">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
-            <h3 class="timeline__role">Full-Stack Web Developer</h3>
+            <h3 class="timeline__role">Founding Engineer</h3>
             <p class="timeline__company">Considdr Inc.</p>
             <p class="timeline__date">Jun 2017 &ndash; Dec 2017</p>
             <ul class="timeline__bullets">
-              <li>Shipped features rapidly at a seed-stage startup using Ruby on Rails and React, iterating based on early user feedback</li>
-              <li>Owned full vertical slices from database through UI and set up CI/CD pipelines for daily deployments</li>
+              <li>Shipped features rapidly at a seed-stage startup using Ruby on Rails and React, owning full vertical slices from database through UI and setting up CI/CD pipelines for daily deployments</li>
             </ul>
           </div>
         </div>
@@ -197,7 +195,7 @@
           <div class="project-card__tags">
             <span class="skill-tag">React</span>
             <span class="skill-tag">Firebase</span>
-            <span class="skill-tag">Gemini CLI</span>
+            <span class="skill-tag">Gemini</span>
           </div>
           <div class="project-card__links">
             <a href="https://github.com/imrimt" target="_blank" rel="noopener" aria-label="GitHub profile">
@@ -219,6 +217,20 @@
           <div class="project-card__links">
             <a href="https://github.com/imrimt/symmetryworks-research-bowdoin" target="_blank" rel="noopener" aria-label="GitHub repository for SymmetryWorks">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <h3 class="project-card__title">Architecture Case Studies</h3>
+          <p class="project-card__desc">Visual deep dives into two production systems I designed: a plugin-based pipeline orchestration engine and an event-driven processing framework on Google Pub/Sub.</p>
+          <div class="project-card__tags">
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">gRPC</span>
+            <span class="skill-tag">Pub/Sub</span>
+          </div>
+          <div class="project-card__links">
+            <a href="architecture.html" aria-label="View architecture diagrams">
+              <span class="btn btn--outline" style="padding: 6px 16px; font-size: 0.8rem;">View Diagrams</span>
             </a>
           </div>
         </div>

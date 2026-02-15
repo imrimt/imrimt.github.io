@@ -697,6 +697,211 @@ a:hover {
 }
 
 /* ============================================
+   Architecture Page
+   ============================================ */
+
+.arch-header {
+  padding: 140px 0 40px;
+  text-align: center;
+}
+
+.arch-header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.arch-header__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.arch__diagram-block {
+  margin-bottom: 56px;
+}
+
+.arch__diagram-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.arch__diagram {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
+}
+
+.arch__diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 560px;
+}
+
+.arch__callouts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.arch__callout {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+/* SVG Theming */
+.arch__svg-ring {
+  fill: var(--accent-light);
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+
+.arch__svg-ring--core {
+  fill: var(--accent);
+}
+
+.arch__svg-box {
+  fill: var(--card-bg);
+  stroke: var(--border);
+  stroke-width: 1.5;
+  rx: 6;
+  ry: 6;
+}
+
+.arch__svg-box--accent {
+  fill: var(--accent-light);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  rx: 6;
+  ry: 6;
+}
+
+.arch__svg-phase {
+  fill: var(--bg-secondary);
+  stroke: var(--border);
+  stroke-width: 1;
+  stroke-dasharray: 4 2;
+  rx: 8;
+  ry: 8;
+}
+
+.arch__svg-arrow {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.arch__svg-line {
+  stroke: var(--border);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.arch__svg-label {
+  fill: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+}
+
+.arch__svg-sublabel {
+  fill: var(--text-secondary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+}
+
+.arch__svg-label--inverse {
+  fill: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+}
+
+/* Tradeoffs */
+.arch__tradeoffs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.arch__tradeoff {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+}
+
+.arch__tradeoff--pro {
+  border-left: 4px solid #22c55e;
+}
+
+.arch__tradeoff--con {
+  border-left: 4px solid #ef4444;
+}
+
+.arch__tradeoff-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.arch__tradeoff--pro .arch__tradeoff-heading {
+  color: #22c55e;
+}
+
+.arch__tradeoff--con .arch__tradeoff-heading {
+  color: #ef4444;
+}
+
+.arch__tradeoff-list {
+  list-style: none;
+  padding: 0;
+}
+
+.arch__tradeoff-list li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.arch__tradeoff-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.arch__tradeoff--pro .arch__tradeoff-list li::before {
+  background: #22c55e;
+}
+
+.arch__tradeoff--con .arch__tradeoff-list li::before {
+  background: #ef4444;
+}
+
+/* ============================================
    Scroll Animations
    ============================================ */
 
@@ -785,6 +990,22 @@ a:hover {
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+
+  .arch-header {
+    padding: 110px 0 24px;
+  }
+
+  .arch-header__title {
+    font-size: 2rem;
+  }
+
+  .arch__tradeoffs {
+    grid-template-columns: 1fr;
+  }
+
+  .arch__diagram svg {
+    min-width: 500px;
   }
 
   .contact__links {
